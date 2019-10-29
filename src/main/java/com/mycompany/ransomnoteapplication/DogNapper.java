@@ -165,7 +165,7 @@ public class DogNapper {
 		for (String ransomNoteMapKey : ransomNoteMap.keySet()) {
 			Integer magazineMapValue = magazineMap.get(ransomNoteMapKey);
 			if (magazineMapValue != null && magazineMapValue >= ransomNoteMap.get(ransomNoteMapKey)) {
-				LOGGER.fine("Word from RansomNote not found in magazine is :" + ransomNoteMapKey);
+				LOGGER.fine("Word from RansomNote found in magazine is :" + ransomNoteMapKey);
 			} else {
 				LOGGER.info("Word from RansomNote not found in magazine is :" + ransomNoteMapKey);
 				return false;
